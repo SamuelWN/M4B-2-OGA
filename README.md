@@ -19,3 +19,8 @@ If a file of the attempted output name already exists:
   - Does not overwrite
   - Saves the files with a suffixed filename
     - e.g. Given input `Example.m4b`: if `info.txt` exists, it saves to: `Example_info.txt` isntead.
+
+
+### Requires:
+- Python >= 3.8
+- ffmpeg-python
