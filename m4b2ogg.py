@@ -127,11 +127,6 @@ def should_regenerate_cue(cue_path: Path, oga_path: Path) -> Tuple[bool, Path]:
                     
                     # Only regenerate if target doesn't exist
                     regenerate = not target_path.exists()
-                # else:
-                #     # Check if existing CUE needs update
-                #     source_mtime = oga_path.stat().st_mtime
-                #     cue_mtime = cue_path.stat().st_mtime
-                #     regenerate = cue_mtime < source_mtime
 
         return regenerate, target_path
     except FileNotFoundError:
